@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(./img/Norse-Bold.otf);
+  }
+
+#left_section{
+    flex: 40;
+    background-image: url('./img/left-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#odin_logo_container {
+    margin-top: 30%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+}
+
+#odin_logo {
+    width: 20%;
+    height: auto;
+    opacity: 100%;
+}
+
+#odin_text {
+    font-family: odinFont;
+    font-size: 5rem;
+}
+
+#right_section {
+    flex: 60;
+    margin: auto 0;
+}
+
+#top_para {
+    padding: 5%;
+}
+
+#top_para > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#form_section {
+    padding: 5%;
+    border: solid black 1px;
+}
+
+#input_container {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template: auto / auto auto;
+}
+
+input {
+    width: 50%;
+    margin-top: 5px;
+    padding: 5px;
+    display: block;
+    border: solid #E5E7EB 2px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:valid{
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#bot_section {
+    padding: 5%;
+}
+
+#create_acc_btn {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 50px;
+    background-color:  #596D48;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#create_acc_btn:hover {
+    cursor: pointer;
+}
+
+#pwMessage {
+    color: red;
+    
+}
